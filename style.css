@@ -1,13 +1,24 @@
 body { color: #000000; margin-left: 4em; margin-right: 4em; }
 
-h1 { background: #00ff7f; font-size: 2.3em; border-radius: 8px; padding-left: 10px; }
-p { line-height: 2.7em; font-size: 16pt; }
+h1 { background: #00ff7f; font-size: 3.0em; border-radius: 8px; padding-left: 10px; }
+p { line-height: 2.7em; font-size: 16pt; background: #FFFFFF; color: black; }
+
+a:link {color:#7cfc00;}
+a:visited{color:#32cd32;}
+
 .center { text-align: center; }
 p.me img{ box-shadow: 4px 4px 4px; }
 table, td, th { border: 1px solid #000000; }
+background-image: ("back.jpg");
 #testA { background-color: red; float: left; width: 25%; height: 100px; }
 /*
 p { background-color: white; width: 350px; height: 150px; padding: 10px 5px 15px 20px; border: 1.5px solid black; margin: 10px 10px 10px 100px; }
 */
+
 h4 { background-color: #fffff0; width: 350px; height: 300px; padding: 10px 5px 15px 20px; border: 1.5px solid black; margin: 10px 10px 10px 100px; }
-h2 { font-size:1.8em }
+h2 { font-size:1.8em; color: white; }
+body { background-image: url("back.jpg"); }
+
+h3 { color: white; }
+
+a{font-size: 25px}
