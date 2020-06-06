@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <meta charset="utf-8">
+   <title>Michael's Project Website</title>
+    <meta name="keywords" content="html, css">
+     <link rel="stylesheet" type="text/css" href=style.css>
+ </head>
+<body>
+<!--
+<h1>Profile</h1>
+-->
+ <img src="protitle.png" width="643" height="80" align="left" alt="title">
+  <hr width="800">
+
+   <p class="me">
+<!--<img src="img/Koala.jpg" width="160" height="120" align="left"　alt="プロフィール画像">-->
+
+<div style="text-align:center">
+<form name="js">
+	ウェブサイトの作成者または組織の名前：<input type="text" name="company" value=""><br>
+	公開された年(西暦)：<input type="text" name="year" value=""><br>
+		タイトル：<input type="text" name="title" value=""><br>
+	ウェブサイトの名前：<input type="text" name="webtitle" value=""><br>
+	ウェブサイトのURL：<input type="text" name="url" value=""><br>
+	アクセスした年（西暦）：<input type="text" name="y" value=""><br>
+	アクセスした月：<input type="text" name="m" value=""><br>
+	アクセスした日：<input type="text" name="d" value=""><br>
+
+	<input type="button" value="APAにする！" onclick="tbox1()"><br>
+	<input type="button" value="リセット" onclick="clr()"><br>
+	</form>
+
+	<script>
+	
+	//テキストボックスの文字を取得する
+	function tbox1(){
+	
+	　//変数の宣言
+	  var company=document.js.company.value;
+	  var year=document.js.year.value;
+	  var title=document.js.title.value;
+	  var webtitle=document.js.webtitle.value;
+	  var url=document.js.url.value;
+	  var y=document.js.y.value;
+	  var m=document.js.m.value;
+	  var d=document.js.d.value;
+	 
+
+	
+	　//ウィンドウの表示
+	  alert( company + "." + " " + "(" + " " + year + " " + ")" + "." + " " + title + "." + " " + 
+	  webtitle + "." + " " + "Retrieved from " + url + " " + "(" + " " + y + "年" + m + "月" + d + "日" + "." + " " + ")");
+	 
+	}
+
+
+	//テキストボックスの文字を操作する
+	//Deletes inside the box
+
+	function clr(){ 
+	
+	  document.js.txtb.value="";
+	  document.js.txtb.value="";
+	  document.js.txtb.value="";
+	  document.js.txtb.value="";
+	  document.js.txtb.value="";
+	  document.js.txtb.value="";
+	  document.js.txtb.value="";
+	  document.js.txtb.value="";
+	  
+
+	
+	}
+	
+	</script>
+</p>
+
+
+
+
+<div style="text-align:center">
+
+<a href="index.html">To Index</a>
+</dev>
+</body>
+</html>
