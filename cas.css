@@ -9,7 +9,7 @@ a:visited{color:#32cd32;}
 .center { text-align: center; }
 p.me img{ box-shadow: 4px 4px 4px; }
 table, td, th { border: 1px solid #000000; }
-background-image: ("back.jpg");
+
 #testA { background-color: red; float: left; width: 25%; height: 100px; }
 /*
 p { background-color: white; width: 350px; height: 150px; padding: 10px 5px 15px 20px; border: 1.5px solid black; margin: 10px 10px 10px 100px; }
