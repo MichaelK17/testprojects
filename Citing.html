@@ -4,53 +4,121 @@
   <meta charset="utf-8">
    <title>Michael's Project Website</title>
     <meta name="keywords" content="html, css">
-     <!--<link rel="stylesheet" type="text/css" href=style.css>-->
+     <link rel="stylesheet" type="text/css" href=cas.css>-->
  </head>
 <body>
+
 <!--
 <h1>Profile</h1>
 -->
- <!--<img src="protitle.png" width="643" height="80" align="left" alt="title">-->
+ <img src="protitle.png" width="643" height="80" align="left" alt="title">
   <hr width="800">
 
-   <p class="me">
+   <p>
+	   日本心理学協会の定めるAPA方式で参考文献を自動で作成してくれます。<br>
+	   必要なものを入力したらコピーペーストしてお使いください。<br>
+
+
+   </p>
+
 <!--<img src="img/Koala.jpg" width="160" height="120" align="left"　alt="プロフィール画像">-->
 
-<div style="text-align:center">
-<form name="js">
-	ウェブサイトの作成者または組織の名前：<input type="text" name="company" value=""><br>
-	公開された年(西暦)：<input type="text" name="year" value=""><br>
-		タイトル：<input type="text" name="title" value=""><br>
-	ウェブサイトの名前：<input type="text" name="webtitle" value=""><br>
-	ウェブサイトのURL：<input type="text" name="url" value=""><br>
-	アクセスした年（西暦）：<input type="text" name="y" value=""><br>
-	アクセスした月：<input type="text" name="m" value=""><br>
-	アクセスした日：<input type="text" name="d" value=""><br>
 
-	<input type="button" value="APAにする！" onclick="tbox1()"><br>
-	<input type="button" value="リセット" onclick="clr()"><br>
+
+<div style="text-align:center">
+ 
+    <li><a href="#A1">ウェブサイトの参考文献を作りたい！</a></li>
+	<li><a href="#A2">本の参考文献を作りたい！</a></li>
+    <li><a href="#A3">3</a></li>
+	<li><a href="#A4">4</a></li>
+  
+
+<hr width="800">
+   <h2 id="A1">ウェブサイトの参考文献を作る！ </h2>
+<hr width="800">
+
+    <p>
+	 記入例：<br>
+	 Wikipediaの夏目漱石のページの参考文献を作る場合<br>
+	 Wikimedia Foundation. (不詳). 夏目漱石. Wikipedia. Retrieved from https://ja.wikipedia.org/wiki/夏目漱石 ( 2020年2月20日. )<br>
+ 	 となる。<br>
+     </p>
+
+
+     <form name="js">
+	 ウェブサイトの作成者または組織の名前：<input type="text" name="company" value="Wikimedia Foundation"><br>
+ 	 公開された年(西暦)：<input type="text" name="year" value="不詳"><br>
+	 	 タイトル：<input type="text" name="title" value="夏目漱石"><br>
+	 ウェブサイトの名前：<input type="text" name="webtitle" value="Wikipedia"><br>
+	 ウェブサイトのURL：<input type="text" name="url" value="https://ja.wikipedia.org/wiki/夏目漱石"><br>
+	 アクセスした年（西暦）：<input type="text" name="y" value="2020"><br>
+	 アクセスした月：<input type="text" name="m" value="2"><br>
+	 アクセスした日：<input type="text" name="d" value="20"><br>
+
+	  <input type="button" value="APAにする！" onclick="tbox1()"><br>
+	   <input type="button" value="リセット" onclick="clr()"><br>
 	</form>
 
-	<script>
+	 <script>
 	
-	//テキストボックスの文字を取得する
-	function tbox1(){
+	  //テキストボックスの文字を取得する
+	   function tbox1(){
 	
-	　//変数の宣言
-	  var company=document.js.company.value;
-	  var year=document.js.year.value;
-	  var title=document.js.title.value;
-	  var webtitle=document.js.webtitle.value;
-	  var url=document.js.url.value;
-	  var y=document.js.y.value;
-	  var m=document.js.m.value;
-	  var d=document.js.d.value;
-	 
+	　 //変数の宣言
+	   var company=document.js.company.value;
+	   var year=document.js.year.value;
+	   var title=document.js.title.value;
+	   var webtitle=document.js.webtitle.value;
+	   var url=document.js.url.value;
+	   var y=document.js.y.value;
+	   var m=document.js.m.value;
+	   var d=document.js.d.value;
+	   
+
+	   
+　　　　　if (m == 1) {
+			m = 'January';
+
+        } else if (m == 2 ){
+			m = 'February';
+		
+		} else if (m == 3 ){
+			m = 'March';
+
+		} else if (m == 4 ){
+			m = 'April';
+		
+		} else if (m == 5 ){
+			m = 'May';
+
+		} else if (m == 6 ){
+			m = 'Jun';
+
+		} else if (m == 7 ){
+			m = 'July';
+
+		} else if (m == 8 ){
+			m = 'August';
+
+		} else if (m == 9 ){
+			m = 'September';
+
+		} else if (m == 10 ){
+			m = 'October';
+
+		} else if (m == 11 ){
+			m = 'November';
+
+		} else if (m == 12 ){
+			m = 'December';
+        
+		}
+
 
 	
-	　//ウィンドウの表示
-	  alert( company + "." + " " + "(" + " " + year + " " + ")" + "." + " " + title + "." + " " + 
-	  webtitle + "." + " " + "Retrieved from " + url + " " + "(" + " " + y + "年" + m + "月" + d + "日" + "." + " " + ")");
+	　  //ウィンドウの表示
+	    alert( company + " " + "(" + year + ")" + "." + " " + title + "." + " " + 
+	    webtitle + "." + " " + "Retrieved from " + url + " " + "(" + m + " " + d + "," + " " +　y + ")");
 	 
 	}
 
@@ -59,19 +127,102 @@
 	//Deletes inside the box
 
 	function clr(){ 
+    var res = confirm("本当に消しますか？");
+    if( res == true ) {
+
+        //Confirm then erase
+	  document.js.company.value="";
+	  document.js.year.value="";
+	  document.js.title.value="";
+	  document.js.webtitle.value="";
+	  document.js.url.value="";
+	  document.js.y.value="";
+	  document.js.m.value="";
+	  document.js.d.value="";
+
+    }
+
+    else {
+        // Do nothing
+    
+	}
+
+}
+
+	 
 	
-	  document.js.txtb.value="";
-	  document.js.txtb.value="";
-	  document.js.txtb.value="";
-	  document.js.txtb.value="";
-	  document.js.txtb.value="";
-	  document.js.txtb.value="";
-	  document.js.txtb.value="";
-	  document.js.txtb.value="";
-	  
+	</script>
 
 	
+</p>
+
+
+
+
+<hr width="800">
+<h2 id="A2">本の参考文献を作る！ </h2>
+<hr width="800">
+ <!--競合しないように、formの名前を変更。-->
+ <!--数字をつけたくないので、2の代わりに_tを用いる。-->
+
+ <p>
+	記入例：<br>
+	夏目漱石の「吾輩は猫である」をAPAにする場合<br>
+	夏目漱石（2011）.　吾輩は猫である　文藝春秋<br>
+	 となります。<br>
+	</p>
+
+
+<form name="js_t">
+	著者の名前：<input type="text" name="writer" value="夏目漱石"><br>
+	出版された年(西暦)：<input type="text" name="year_t" value="2011"><br>
+		本の題名：<input type="text" name="title_t" value="吾輩は猫である"><br>
+	出版社：<input type="text" name="company_t" value="文藝春秋"><br>
+	
+	<input type="button" value="APAにする!" onclick="tbox_t()"><br>
+	<input type="button" value="リセット" onclick="clr_t()"><br>
+	</form>
+
+	<script>
+	
+	//テキストボックスの文字を取得する
+	function tbox_t(){
+	
+	　//変数の宣言
+	  var company_t=document.js_t.company_t.value;
+	  var year_t=document.js_t.year_t.value;
+	  var title_t=document.js_t.title_t.value;
+	  var writer=document.js_t.writer.value;
+
+	
+	　//ウィンドウの表示
+	  alert( writer + "（" + year_t + "）" + "." + "　" + title_t + "　" + company_t );
+	 
 	}
+
+
+	//テキストボックスの文字を操作する
+	//Deletes inside the box
+
+	function clr_t(){ 
+	  var res = confirm("本当に消しますか？");
+       if( res == true ) {
+
+	  document.js_t.writer.value="";
+	  document.js_t.company_t.value="";
+	  document.js_t.title_t.value="";
+	  document.js_t.year_t.value="";
+
+    }
+
+    else {
+        // Do nothing
+    
+	}
+
+}
+	
+
 	
 	</script>
 </p>
@@ -79,7 +230,7 @@
 
 
 
-<div style="text-align:center">
+
 
 <a href="index.html">To Index</a>
 </dev>
